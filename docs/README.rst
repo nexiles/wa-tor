@@ -16,4 +16,4 @@ Goals
 
 - a header
 
-- under the heading, the number of steps(simulatin time)
+- under the heading, the number of steps (simulation time)
