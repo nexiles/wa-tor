@@ -2,6 +2,18 @@
 Wa-Tor
 =======
 
+
+Introduction
+============
+
+- About what is this going?
+
+- The Problem
+
+
+Requirements
+============
+
 - for Mac and possibly for Windows
 
 - language: Python
