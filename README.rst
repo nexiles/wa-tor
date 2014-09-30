@@ -1,4 +1,19 @@
-War Tor
+=======
+Wa-Tor
 =======
 
-This is the repository for the war tor simulation.
+- for Mac and possibly for Windows
+
+- language: Python
+
+- Documentation
+
+
+Goals
+=====
+
+- a window with the simulation
+
+- a header
+
+- under the heading, the number of steps (simulations time)
