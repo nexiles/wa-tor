@@ -13,7 +13,7 @@ The Ocean consists of a square Grid. The opposite Sides are stapled. That means 
 fish want to swim on 
 one side he comes out on the opposite side out again.
 
-**rules for fish:**    
+___rules for fish:___    
 Each fish swims randomly to one of the four fields, if it is empty. Each fish has an age, exeeds this 
 age the "Breed Time", so 
 a new fish is born on an empty field.
