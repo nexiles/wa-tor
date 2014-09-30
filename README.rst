@@ -1,5 +1,5 @@
 =======
-War Tor
+Wa-Tor
 =======
 
 - for Mac and possibly for Windows
