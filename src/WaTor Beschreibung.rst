@@ -26,7 +26,7 @@ der Hai jedoch einen Fisch werden ihm die Energiewerte von dem Fisch dazugerechn
 Hai ist. Wenn dort kein Fisch oder Hai ist gibt es -1 zurück. Wenn dort allerdings ein Fisch oder Hai ist,
 gibt es das Alter des Fisches oder Haies zurück.
 Die Funktion **"fish_swim"** und **"shark_swim"** gibt an ob der Gitterpunkt ein Ziel eines anderen Fisch oder Hai ist
-(in der aktuellen Schleife). **"hungry"** gibt ab ob an dem Gitterpunkt ein Hai ist und zeigt an wann er das
+(in der aktuellen Schleife). **"hungry"** gibt an ob an dem Gitterpunkt ein Hai ist und zeigt an wann er das
 letzte mal gegessen hat.
 Dann werden den Parametern **"rounds"**, **"nfish"**, **"nshark"**, **"fbrut"**, **"hbrut"**
 und **"fasten"** jeweils einen Wert zugeordnet.
