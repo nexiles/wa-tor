@@ -97,7 +97,7 @@ def fish_swim(X,Y):
 
 def shark_swim(X,Y):
   return -1
-#um zu wissen ob das ein Ziel von einem anderen Fisch ist in der aktuellen Schleife
+#um zu wissen ob das ein Ziel von einem anderen Hai ist in der aktuellen Schleife
 
 def hungry(X,Y):
   return -1
