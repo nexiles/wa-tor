@@ -37,17 +37,26 @@ def create_fish(id):
   #
 
 def create_shark(id):
-  return -1
-  #create_shark(id) -> a dict
-  #
-  #This function crea a shark objectwhich we can place in our ocean.
-  #
-  #The shark object should look like this.
-  # {
-  #  "id": id,
-  #   "cordiantes":
-  # }
-  #
+    """
+    create_shark(id) -> a dict
+
+    This function crea a shark objectwhich we can place in our ocean.
+
+    @param id: the id of a new shark
+
+    @returns:  a shark
+    """
+    #
+    #
+    #This function crea a shark objectwhich we can place in our ocean.
+    #
+    #The shark object should look like this.
+    # {
+    #  "id": id,
+    #   "cordiantes":
+    # }
+    #
+    return -1
 
 
 
