@@ -6,8 +6,8 @@ Beschreibung
 
 Wa-Tor ist eine Simulation die das Fress- und Fortpflanzungsverhalten von Haien und Fischen
 simuliert. Um diese Simulation darstellen zu können muss man diese erst mal programmieren.
-Es werden verschiedene Funktionen erstellt z.B. die Funktion "main".
-"main" ist dazu da damit überhaupt erstmal was aufgerufen wird beziehungsweise das die Simulation starten kann.
+Es werden verschiedene Funktionen erstellt z.B. die Funktion **"main"**.
+**"main"** ist dazu da damit überhaupt erstmal was aufgerufen wird beziehungsweise das die Simulation starten kann.
 In "main" wird die Anzahl der Runden angegeben.
 Die Funktion **"create_ocean"** definiert ein paar Regeln. Z.B. kann auf jeden Gitterpunkt nur ein
 Fisch oder nur ein Hai sein. Allerdings ist das Gitter auch "verheftet" das heißt wenn ein
