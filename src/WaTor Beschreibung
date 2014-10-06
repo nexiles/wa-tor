@@ -1,9 +1,8 @@
-=======
+
 Wa-Tor
-=======
 
 Beschreibung
-============
+
 
 Wa-Tor ist eine Simulation die das Fress- und Fortpflanzungsverhalten von Haien und Fischen
 simuliert. Um diese Simulation darstellen zu können muss man diese erst mal programmieren.
@@ -30,4 +29,4 @@ Die Funktion **"fish_swim"** und **"shark_swim"** gibt an ob der Gitterpunkt ein
 (in der aktuellen Schleife). **"hungry"** gibt ab ob an dem Gitterpunkt ein Hai ist und zeigt an wann er das
 letzte mal gegessen hat.
 Dann werden den Parametern **"rounds"**, **"nfish"**, **"nshark"**, **"fbrut"**, **"hbrut"**
-und **"fasten"** jeweils einen Wert zugeordnet.
+und ***"fasten"*** jeweils einen Wert zugeordnet.
