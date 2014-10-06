@@ -89,7 +89,7 @@ def is_fish(X,Y):
 
 def is_shark(X,Y):
   return -1
-# returns -1 if no fish otherwise the age of fish
+# returns -1 if no fish otherwise the age of shark
 
 def fish_swim(X,Y):
   return -1
