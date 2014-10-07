@@ -1,54 +1,65 @@
+"""
+nfish = Anzahl der Fische am Anfang
+
+fbrut = Zahl die ein Fisch exestieren muss bis er ein Nachkommen hat
+"""
+
 def main(rounds, nfish, nshark, fbrut, hbrut, fasten):
-  return -1
-  #start_game(rounds) -> void
-  #
-  #:rounds: a number which descibes the rounds simulating
-  #
-  #This is the main funcation of our application, here we start the app and loop the
-  #simulation rounds.
+    """
+    start_game(rounds) -> void
 
-  # 1 Round = 1 time unit (Zeiteinheit)
+    :rounds: a number which descibes the rounds simulating
 
-  #1. fische schwimmen und vermehren sich
-  #2. haie jagen und vermehren sich
-  #3. anzeige
+    This is the main funcation of our application, here we start the app and
+    loop the simulation rounds.
+
+    1 Round = 1 time unit (Zeiteinheit)
+
+    1. fische schwimmen und vermehren sich
+    2. haie jagen und vermehren sich
+    3. anzeige
+    """
+    return -1
 
 def create_ocean():
-  return -1
-  #
-  #on each grid point can only be one fish or only one shark
-  #grid is stapled so -> when the shark or fish want to swim on one side he
-  #comes out on the opposite side out again.
-  #
+    """
+    on each grid point can only be one fish or only one shark
+    grid is stapled so -> when the shark or fish want to swim on one side he
+    comes out on the opposite side out again.
+    """
+    return -1
 
 
 def create_fish(id):
-  return -1
-  #create_fish(id) -> a dict
-  #
-  #This function creates a fish objcet which we can place in our ocean.
-  #
-  #The fish object should look like this.
-  #
-  # {
-  #  "id": id,
-  #  "cordinates":
-  # }
-  #
+    """
+    create_fish(id) -> a dict
+
+    This function creates a fish objcet which we can place in our ocean.
+
+    @param id: the id of a new fish
+
+    @returns: a fish
+    """
+    #
+    #The fish object should look like this.
+    #
+    # {
+    #  "id": id,
+    #  "cordinates":
+    # }
+    #
+    return -1
 
 def create_shark(id):
     """
     create_shark(id) -> a dict
 
-    This function crea a shark objectwhich we can place in our ocean.
+    This function creates a shark object which we can place in our ocean.
 
     @param id: the id of a new shark
 
     @returns:  a shark
     """
-    #
-    #
-    #This function crea a shark objectwhich we can place in our ocean.
     #
     #The shark object should look like this.
     # {
@@ -59,59 +70,85 @@ def create_shark(id):
     return -1
 
 
-
-#nfish = Anzahl der Fische am Anfang
-#fbrut = Zahl die ein Fisch exestieren muss bis er ein Nachkommen hat
-
 def fish(nfish, fbrut):
-  return -1
-  #{
-  # "nfish": 100,
-  # "fbrut": 4
-  #}
+    """
+    "nfish": number,
+    "fbrut": number
 
-#if fbrut > 4:
-  #print create_fish
+    This function gives the number of the fishes in the beginning and the
+    number when a fish get a progeny.
 
-#nshark = Anzahl der Haie am Anfang
-#sbrut = Zahl die ein Hai exestieren muss bis er ein Nachkommen hat
-#fasten = Die Zahl die ein Hai ohne Nahrungs auskommt
+    When the number is bigger than the fbrut number, a new fish will create.
+    """
+    return -1
+
+    # Example
+    #
+    #if fbrut > 4:
+        #print create_fish
+
 
 def shark(nshark, sbrut, fasten):
-  return -1
-  #{
-  # "nshark": 10,
-  # "sbrut": 5
-  # "fasten": 4
-  #}
 
-#if sbrut > 5:
-   #print create_shark
+    """
+    "nshark": number,
+    "sbrut": number
+    "fasten": number
 
-#for every period, while the shark doesnt find a fish, he losing an energy point.
-#if the shark find a fish, his energy value increases of the fish enegry.
-#
-#
+    This function gives the number of the fishes in the beginning, the
+    number when a shark get a progeny and the number survive the sharks
+    without food.
+
+
+    When the number is bigger than the fbrut number, a new shark will create.
+    When the number is bigger than the fasten number, the shark dies.
+    """
+    return -1
+
+    # Example
+    #if sbrut > 5:
+        #print create_shark
+    #
+    #if fasten < 4
+        #shark dies
+
+    #for every period, while the shark doesnt find a fish, he losing an energy
+    #point.
+    #if the shark find a fish, his energy value increases of the fish enegry.
+    #
+
 def is_fish(X,Y):
-  return -1
-# returns -1 if no fish otherwise the age of fish
+    """
+    returns -1 if no fish otherwise the age of fish
+    """
+    return -1
 
 def is_shark(X,Y):
-  return -1
-# returns -1 if no fish otherwise the age of shark
+    """
+    returns -1 if no fish otherwise the age of shark
+    """
+    return -1
 
 def fish_swim(X,Y):
-  return -1
-#um zu wissen ob das ein Ziel von einem anderen Fisch ist in der aktuellen Schleife
+    """
+    um zu wissen ob das ein Ziel von einem anderen Fisch ist in der aktuellen
+    Schleife
+    """
+    return -1
 
 def shark_swim(X,Y):
-  return -1
-#um zu wissen ob das ein Ziel von einem anderen Hai ist in der aktuellen Schleife
+    """
+    um zu wissen ob das ein Ziel von einem anderen Hai ist in der aktuellen
+    Schleife
+    """
+    return -1
 
 def hungry(X,Y):
-  return -1
-#um zu wissen ob an dem gitterpunkt ein hai ist und um zu wissen wann er das letzte mal gegessen hat
-
+    """
+    um zu wissen ob an dem gitterpunkt ein hai ist und um zu wissen wann er das
+    letzte mal gegessen hat
+    """
+    return -1
 
 rounds = 6
 nfish = 20
