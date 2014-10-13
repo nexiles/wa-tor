@@ -60,16 +60,8 @@ def mainloop(t_start, dt, t_stopp):
         t = t + dt
 
         # Wenn die Zeit t_stopp erreicht ist, bitte aufhoeren
-
         fertig = ist_simulation_fertig(dt ,t ,t_stopp)
 
-        #if dt < 0:
-    #        if t <= t_stopp:
-    #            fertig = True
-    #
-    #    else:
-    #        if t >= t_stopp:
-    #            fertig = True
     return t
 
 
