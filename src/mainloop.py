@@ -15,7 +15,23 @@ def display(t, welt):
 
     Stelle die aktuelle welt und zeit dar.
     """
-    print "Zeit: ", t, "Welt: ", welt
+    print "Time: ", t, "Welt: ", welt
+
+
+def ist_simulation_fertig(dt, t, t_stopp):
+    """
+    ist_simulation_fertig() -> stopp the loop
+    """
+    fertig = False
+    if dt < 0:
+        if t <= t_stopp:
+            fertig = True
+
+    else:
+        if t >= t_stopp:
+            fertig = True
+
+    return fertig
 
 def mainloop(t_start, dt, t_stopp):
     """
@@ -28,6 +44,8 @@ def mainloop(t_start, dt, t_stopp):
 
     # initialisiere eine welt
     welt = None
+
+    #pdb.set_trace()
 
     fertig = False
     # solange nicht fertig:
@@ -42,13 +60,33 @@ def mainloop(t_start, dt, t_stopp):
         t = t + dt
 
         # Wenn die Zeit t_stopp erreicht ist, bitte aufhoeren
-        if t >= t_stopp:
-            fertig = True
 
+        fertig = ist_simulation_fertig(dt ,t ,t_stopp)
+
+        #if dt < 0:
+    #        if t <= t_stopp:
+    #            fertig = True
+    #
+    #    else:
+    #        if t >= t_stopp:
+    #            fertig = True
     return t
 
-print "Lauf 1"
-mainloop(0, 1, 10)
 
-print "Lauf 2"
-mainloop(0, 0.1, 10)
+print "Runde 1"
+mainloop(0, 1, 5)
+
+print "Runde 2"
+mainloop(0, 1, 3)
+
+print "Runde 3"
+mainloop(-3, 1, 0)
+
+print "Runde 4"
+mainloop(3, -1, 0)
+
+print "Runde 5"
+mainloop(10, -2, 5)
+
+print "Runde 6"
+mainloop(6, -0.5, 4)
