@@ -1,5 +1,46 @@
 # -*- coding: utf-8 -*-
 
+import random
+
+size_x = 5
+size_y = 4
+
+nfische = 13
+nhaie   = 7
+
+hbrut   = 8
+fasten  = 5
+fbrut   = 3
+
+
+def init_welt(nfische, nhaie):
+    """init_welt() -> welt
+
+    Initialisiert eine neue welt.  Gibt die Welt zurück.
+
+    random.choice ...
+
+    """
+    welt = []
+
+    # schritt 1: erzeuge eine **leere** welt
+
+    # für jede zeile (y)
+        # erzeuge ein neues array für die zeile
+        # füge die zeile in die welt
+
+    # für alle zu erzeugenden fische
+        # wähle eine zufällige x,y position
+        # wenn position nich besetzt:
+            # setze den fisch
+
+    # für alle zu erzeugenden haie
+        # wähle eine zufällige x,y position
+        # wenn position nich besetzt:
+            # setze den hai
+
+    return welt
+
 def simulationsschritt(t, welt):
     """
     simulationsschritt(t, welt) -> welt
@@ -15,7 +56,11 @@ def display(t, welt):
 
     Stelle die aktuelle welt und zeit dar.
     """
-    print "Time: ", t, "Welt: ", welt
+    print "Time: ", t
+    for y in range(size_y):
+        for x in range(size_x):
+            print " ", welt[y][x], " ",
+        print
 
 
 def ist_simulation_fertig(dt, t, t_stopp):
@@ -43,7 +88,7 @@ def mainloop(t_start, dt, t_stopp):
     t = t_start
 
     # initialisiere eine welt
-    welt = None
+    welt = init_welt(nfische, nhaie)
 
     #pdb.set_trace()
 
