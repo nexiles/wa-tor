@@ -5,8 +5,8 @@ import random
 size_x = 5
 size_y = 4
 
-nfische = 13
-nhaie   = 7
+nfische = 4 #13
+nhaie   = 4 #7
 
 hbrut   = 8
 fasten  = 5
@@ -21,7 +21,24 @@ def init_welt(nfische, nhaie):
     random.choice ...
 
     """
-    welt = []
+    welt = [
+
+    [[0], [0], [0], [0], [0]],
+    [[0], [0], [0], [0], [0]],
+    [[0], [0], [0], [0], [0]],
+    [[0], [0], [0], [0], [0]]
+
+    ]
+
+    fisch = create_fish()
+    for i in range(0, nfische, 1):
+        #erster durchlauf i=1
+        #
+        welt = set_gameobject_in_world(fisch, welt)
+
+    for i in range(0, nhaie, 1):
+        shark = create_shark()
+        welt = set_gameobject_in_world(shark, welt)
 
     # schritt 1: erzeuge eine **leere** welt
 
@@ -40,6 +57,45 @@ def init_welt(nfische, nhaie):
             # setze den hai
 
     return welt
+
+def set_gameobject_in_world(typ, welt):
+
+    x, y = get_random_pos()
+    if is_already_set(x, y, welt):
+        welt = set_gameobject(x, y, welt, typ)
+    else:
+        set_gameobject_in_world(typ, welt)
+    return welt
+
+def set_gameobject(x, y, welt, value):
+    welt[y][x] = value
+    return welt
+
+def is_already_set(x, y, welt):
+    """is_already_set(x, y, welt)-> bool
+    :x: the x cordinate we want to set
+    :y: the y cordinate we want to set
+    :welt: an array which includes several arrays. represending the world
+
+    1/3 =
+
+    :return: True/False if the point is already used.
+    """
+    if (welt[y][x][0] == 0):
+        return True
+    else:
+        return False
+
+def create_fish():
+    return [1, 1]
+
+def create_shark():
+    return [2, 1, 1]
+
+def get_random_pos():
+    y = random.randint(0, 3)
+    x = random.randint(0, 4)
+    return (x, y)
 
 def simulationsschritt(t, welt):
     """
@@ -78,6 +134,7 @@ def ist_simulation_fertig(dt, t, t_stopp):
 
     return fertig
 
+
 def mainloop(t_start, dt, t_stopp):
     """
     mainloop
@@ -108,7 +165,6 @@ def mainloop(t_start, dt, t_stopp):
         fertig = ist_simulation_fertig(dt ,t ,t_stopp)
 
     return t
-
 
 print "Runde 1"
 mainloop(0, 1, 5)
